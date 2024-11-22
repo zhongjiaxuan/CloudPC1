@@ -29,7 +29,7 @@ jobs:
           $userAccount.SetPassword($plainPassword)
           Expand-Archive -Path cpolar.zip -DestinationPath E:\cpolar
           cd E:\cpolar
-          cp D:\a\CloudPC\CloudPC E:\workspace -r
+          cp D:\a\CloudPC1\CloudPC1 E:\workspace -r
           .\cpolar authtoken ${{ secrets.CPOLAR_AUTHTOKEN }}
       - name: Start Cpolar
         run: |
